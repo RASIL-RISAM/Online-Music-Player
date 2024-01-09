@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="forms validation.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="register"> 
+            <h2>SIGNUP/SIGNIN</h2>
+            <form id="register" method="post" action="/">
+                <p id="help" style="border:none; height:20pt; color:brown "></p>
+
+            <label>First Name:</label>    
+            <br>
+            <input type="text" name="fname"
+            id="fname" id="fname" placeholder="First Name" class="name">
+            <br><br>
+            <label>Last Name: </label>
+            <br>
+            <input type="text" name="lname"
+            id="lname" id="lname" placeholder="Last Name" class="name">
+            <br><br>
+            <label>User Name:</label>
+            <input type="text" name="uname"
+            id="uname" id="uname" placeholder="User Name" class="name">
+            <br><br>
+            <label>Email : </label>
+            <br>
+            <input type="email" name="email"
+            id="email" id="email" placeholder="Email" class="name">
+            <br><br>
+            <label>DOB :</label>
+            <br><input type="date" name="date"
+            id="date" placeholder="" class="name">
+            <br><br>
+            <label> Set password :</label>
+            <br>
+            <input type="password" name="password"
+            id="password" id="password" class="name">
+            <br><br>
+            <label>Confirm Passsword :</label>
+            <br>
+            <input type="password" name="password1"
+            id="password1" id="password1"class="name">
+            <br><br>
+            <label>Gender : </label>
+            <br>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender"
+            id="male"required>
+            &nbsp;
+            <span id="flog">Male</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender"
+            id="female">
+            &nbsp;
+            <span id="flog">Female</span>
+            <br><br>
+            <button onclick="return validateform()" formaction="http://localhost:3500/save" >Submit</button>
+            </form>
+        </div>
+    </div>
+    <script defer src="forms validation.js"></script>
+</body>
+</html>
